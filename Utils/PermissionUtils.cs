@@ -9,12 +9,12 @@ namespace SkillSets
 		{
 			SkillSet skillSet = Utils.SkillsUtils.FindSkillSetByName(skillsetName);
 			if (skillSet == null) return false;
-			return player.HasPermission(skillSet.getPermissionName());
+			return player.HasPermission(skillSet.GetPermissionName());
 		}
 
 		public static bool IsPermitted(IRocketPlayer player, SkillSet skillSet)
 		{
-			return player.HasPermission(skillSet.getPermissionName());
+			return player.HasPermission(skillSet.GetPermissionName());
 		}
 	}
 }
