@@ -40,7 +40,7 @@ namespace SkillSets
 			IsDefault = isDefault;
 		}
 
-		public string getPermissionName()
+		public string GetPermissionName()
 		{
 			return string.Format("skillsets.{0}", Name);
 		}

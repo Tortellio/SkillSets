@@ -62,8 +62,8 @@ namespace SkillSets.Commands
 				return;
 			}
 			SkillsUtils.SetSkills((UnturnedPlayer)caller, skillSetName);
-			bool saved = SkillSetsPlugin.Instance.GetStorage().Save(((UnturnedPlayer)caller).CSteamID, skillSetName);
-			UnturnedChat.Say(caller, SkillSetsPlugin.Instance.Translate("SKILLSET_APPLIED"));
+            _ = SkillSetsPlugin.Instance.GetStorage().Save(((UnturnedPlayer)caller).CSteamID, skillSetName);
+            UnturnedChat.Say(caller, SkillSetsPlugin.Instance.Translate("SKILLSET_APPLIED"));
 		}
 
 		bool IsPermitted(IRocketPlayer caller, SkillSet skillSet)

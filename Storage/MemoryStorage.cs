@@ -10,9 +10,8 @@ namespace SkillSets.Storage
 
 		public string Get(CSteamID steamId)
 		{
-			string result;
-			Memory.TryGetValue(steamId.m_SteamID, out result);
-			return result;
+            Memory.TryGetValue(steamId.m_SteamID, out string result);
+            return result;
 		}
 
 		public void Load()
